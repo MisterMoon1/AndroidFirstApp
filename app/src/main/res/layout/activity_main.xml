@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_button"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/button_background"
+        android:gravity="center"
+        android:onClick="createName"
+        android:orientation="vertical"
+        android:text="Обозвать себя"
+        android:textColor="#504040"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/take_button"
+        android:layout_width="114dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background"
+        android:onClick="lookEpifania"
+        android:text="Потрогать"
+        android:textColor="#504040"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_button" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/game_button"
+        android:layout_width="113dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_background"
+        android:text="Поиграть"
+        android:onClick="gameRockPaper"
+        android:textColor="#504040"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/take_button"
+        app:layout_constraintVertical_bias="0.01"
+        tools:layout_editor_absoluteX="149dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="740dp"
+        android:layout_height="786dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/android_background" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="242dp"
+        android:layout_height="143dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/edit_text_style"
+        android:fontFamily="sans-serif-smallcaps"
+        android:rotationX="8"
+        android:text="@string/Bogdan_game_text"
+        android:textAlignment="center"
+        android:textColor="#504040"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BogdanValley</string>
+    <string name="Bogdan_game_text">Bogdan\nValley</string>
+    <string name="take_Epifania">Потрогай Великого!</string>
+    <string name="game_choise">Ну что, братуха,\n \nпоиграем?</string>
+    <string name="touchEpifanya">Спасибо,\nчто потрогал меня!</string>
+</resources>
