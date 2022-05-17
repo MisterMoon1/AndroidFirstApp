@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
     fun createName(view: View) {
         val name = "Богдан"
-        val array = arrayOf("Говнов", " снежок-творожок", "лужа", "паскудяра", "скотина")
+        val array = arrayOf("Жиров", " снежок-творожок", "лужа", "ты кто", "не человек")
         val generate = "$name ${array[(Math.random()*array.size).toInt()]}"
         val myToast = Toast.makeText(this, generate, Toast.LENGTH_SHORT)
         myToast.setGravity(Gravity.CENTER_VERTICAL, 0, 0)
